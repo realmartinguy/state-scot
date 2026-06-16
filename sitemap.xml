@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.state.scot/</loc>
+    <loc>https://www.statescot.uk/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/fiscal.html</loc>
+    <loc>https://www.statescot.uk/fiscal.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/nhs.html</loc>
+    <loc>https://www.statescot.uk/nhs.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/education.html</loc>
+    <loc>https://www.statescot.uk/education.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/justice.html</loc>
+    <loc>https://www.statescot.uk/justice.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/social-security.html</loc>
+    <loc>https://www.statescot.uk/social-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/housing.html</loc>
+    <loc>https://www.statescot.uk/housing.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/transport.html</loc>
+    <loc>https://www.statescot.uk/transport.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.state.scot/feedback-disclaimers.html</loc>
+    <loc>https://www.statescot.uk/feedback-disclaimers.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
