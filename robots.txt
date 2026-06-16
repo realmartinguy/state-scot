@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.state.scot/sitemap.xml
+Sitemap: https://www.statescot.uk/sitemap.xml
