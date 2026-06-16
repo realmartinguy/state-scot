@@ -371,54 +371,86 @@ const SITE_DATA = {
       {
         id: 'justice-police-officers',
         title: 'Number of Police Officers',
-        description: 'Number of police officers (FTE).',
+        description: 'Full-time equivalent (FTE) Number of Police Scotland officers.',
         target: null,
-        current:  { value: '16,553', raw: 16553, period: 'Q1 2025' },
-        previous: { value: '16,508', raw: 16508, period: 'Q4 2024' },
-        change: { value: '45 (0.3%)', direction: 'up' },
+        current:  { value: '16,430', raw: 16430, period: 'Q1 2026' },
+        previous: { value: '16,416', raw: 16416, period: 'Q4 2025' },
+        change: { value: '14', direction: 'up' },
         status: 'green',
-        narrative: 'The number of police officers is rising.',
+        narrative: 'The number of police officers has risen.',
         source: { name: 'Police Scotland', url: 'https://www.scotland.police.uk/about-us/how-we-do-it/police-scotland-officer-numbers/' }
       },
       {
         id: 'justice-recorded-crime',
         title: 'Number of Recorded Crimes',
-        description: 'Total number of recorded crimes.',
+        description: 'Crimes are the more serious criminal acts, such as murder, assault, rape and fraud.',
         target: null,
         current:  { value: '299,111', raw: 299111, period: '2024/25' },
         previous: { value: '299,780', raw: 299780, period: '2023/24' },
-        change: { value: '669 (0.2%)', direction: 'down' },
+        change: { value: '669', direction: 'down' },
         status: 'green',
-        narrative: 'The number of recorded crimes is falling.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2023-24/pages/2/' }
+        narrative: 'The number of recorded crimes has decreased.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2024-25/pages/key-points/' }
+      },
+      {
+        id: 'justice-recorded-offences',
+        title: 'Number of Recorded Offences',
+        description: 'Offences are the less serious criminal acts, such as speeding, littering, anti-social behaviour and traffic violations.',
+        target: null,
+        current:  { value: '175,979', raw: 175979, period: '2024/25' },
+        previous: { value: '174,073', raw: 174073, period: '2023/24' },
+        change: { value: '1906', direction: 'up' },
+        status: 'red',
+        narrative: 'The number of recorded offences has increased.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2024-25/pages/key-points/' }
       },
       {
         id: 'justice-verdicts-1yr',
-        title: 'Verdicts within 1 year of offence date',
-        description: 'Percentage of accused that proceed to court with verdicts within 1 year of the offence date.',
+        title: 'Verdicts Within 1 Year',
+        description: 'Percentage of accused that proceed to court with verdicts within 1 year since the police were first aware of the charges.',
         target: null,
-        current:  { value: '61%', raw: 61, period: '2023/24' },
-        previous: { value: '57%', raw: 57, period: '2022/23' },
-        change: { value: '4pp', direction: 'up' },
+        current:  { value: '70%', raw: 70, period: '2024/25' },
+        previous: { value: '64%', raw: 64, period: '2023/24' },
+        change: { value: '6pp', direction: 'up' },
         status: 'green',
-        narrative: 'Court verdicts within 1 year of the offence have increased.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/journey-times-in-the-scottish-criminal-justice-system-2023-24/pages/6-accused-that-proceed-to-court/' }
+        narrative: 'The criminal justice system is delivering verdicts quicker.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/journey-times-in-the-scottish-criminal-justice-system-2024-25/pages/6-overview-of-times-for-accused-that-proceed-to-court/' }
       },
       {
-        id: 'justice-custody-time',
-        title: 'Average Time in Custody',
-        description: 'Average amount of time a prisoner spends in custody.',
+        id: 'justice-prison-population',
+        title: 'Prison Population',
+        description: 'Average daily prison population.',
         target: null,
-        current:  { value: '222 days', raw: 222, period: '2023/24' },
-        previous: { value: '235 days', raw: 235, period: '2022/23' },
-        change: { value: '13 days (6%)', direction: 'down' },
-        // Marked neutral rather than green/red \u2014 whether a falling
-        // average time in custody is "good" depends on the cause (e.g.
-        // throughput vs early release policy). Set this to red or green
-        // if you want to take an editorial position.
+        current:  { value: '8216', raw: 8216, period: '2024/25' },
+        previous: { value: '7860', raw: 7860, period: '2023/24' },
+        change: { value: '356', direction: 'up' },
         status: 'neutral',
-        narrative: 'The average time in custody is falling.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/scottish-prison-population-statistics-2023-24/pages/population-transitions-and-out-flows' }
+        narrative: 'The prison population has risen.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/scottish-prison-population-statistics-2024-25/' }
+      },
+      {
+        id: 'justice-early-release',
+        title: 'Emergency Early Release',
+        description: 'Number of prisoners granted emergency early release, in order to prevent overcrowding in the prison estate.',
+        target: null,
+        current:  { value: '555', raw: 555, period: '2025/26' },
+        previous: { value: '477', raw: 477, period: '2024/25' },
+        change: { value: '78', direction: 'up' },
+        status: 'red',
+        narrative: 'The number of prisoners being released early to prevent overcrowding has increased.',
+        source: { name: 'Scottish Prison Service', url: 'https://www.sps.gov.uk/about-us/transparency/data-research-and-evidence/emergency-early-release-data' }
+      },
+      {
+        id: 'justice-reoffending',
+        title: 'Reoffending Within 1 Year',
+        description: 'Proportion of individuals who left custody or had a community sentence who were reconvicted within 1 year.',
+        target: null,
+        current:  { value: '27.1%', raw: 27.1, period: '2021/22' },
+        previous: { value: '26.9%', raw: 26.9, period: '2020/21' },
+        change: { value: '0.2pp', direction: 'up' },
+        status: 'red',
+        narrative: 'The proportion of those leaving the criminal justice system who reoffend has increased. Note, the delay in reporting is so accurate data can be gathered on convictions and verdicts.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/reconviction-rates-in-scotland-2021-22-offender-cohort/' }
       }
     ]
   },
