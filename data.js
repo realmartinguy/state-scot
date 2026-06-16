@@ -271,7 +271,7 @@ const SITE_DATA = {
         status: 'red',
         narrative: 'The proportion of pupils who have an Additional Support Need has risen.',
         source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/pupil-and-teacher-characteristics-2025/pages/school-teachers/' }
-      }
+      },
       {
         id: 'edu-teachers-primary',
         title: 'Number of Teachers - Primary',
