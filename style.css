@@ -148,7 +148,7 @@ img { max-width: 100%; display: block; }
 
 .hero__title em {
   font-style: italic;
-  color: var(--red);
+  color: var(--blue);
 }
 
 .hero__sub {
