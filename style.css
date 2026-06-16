@@ -12,7 +12,7 @@
   /* ---- Palette --------------------------------------------------- */
   --ink:        #1A2238;   /* primary text, headings, nav */
   --ink-soft:   #4B5468;   /* secondary text on paper */
-  --paper:      #FBFAF7;   /* page background */
+  --paper:      #EDF2F7;   /* page background */
   --card:       #FFFFFF;   /* card background */
   --rule:       #DAD5C8;   /* hairline borders */
   --rule-soft:  #EAE6DC;   /* lighter hairlines / table rows */
@@ -27,6 +27,7 @@
   --green-tint: #E7EFE9;
   --neutral:    #756F64;
   --neutral-tint:#EFECE5;
+  --blue:       #1197F0; 
 
   /* ---- Type --------------------------------------------------------- */
   --font-display: 'Times New Roman', Times, 'Liberation Serif', serif;
