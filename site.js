@@ -196,7 +196,7 @@ function initChart(ind) {
         y: {
           grid: { display: false },
           ticks: {
-            font: { family: 'IBM Plex Mono', size: 10 },
+            font: { family: 'Courier New', size: 10 },
             color: STATUS_COLORS.neutral
           }
         }

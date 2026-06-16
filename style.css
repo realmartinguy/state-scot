@@ -29,9 +29,9 @@
   --neutral-tint:#EFECE5;
 
   /* ---- Type --------------------------------------------------------- */
-  --font-display: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
-  --font-body:    'IBM Plex Sans', -apple-system, Segoe UI, sans-serif;
-  --font-mono:    'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+  --font-display: 'Times New Roman', Times, 'Liberation Serif', serif;
+  --font-body:    'Times New Roman', Times, 'Liberation Serif', serif;
+  --font-mono:    'Courier New', Courier, monospace;
 
   /* ---- Layout --------------------------------------------------------- */
   --max-width: 1080px;
