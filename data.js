@@ -94,13 +94,13 @@ const SITE_DATA = {
       {
         id: 'fiscal-net-balance',
         title: 'Net Fiscal Balance',
-        description: 'Net Fiscal Balance = Public Sector Revenue \u2212 Public Sector Expenditure.',
+        description: 'Net Fiscal Balance = Public Sector Revenue - Public Sector Expenditure.',
         target: null,
-        current:  { value: '\u2212\u00a326.50bn', raw: -26.497, period: '2024/25' },
-        previous: { value: '\u2212\u00a321.41bn', raw: -21.407, period: '2023/24' },
+        current:  { value: '-£26.50bn', raw: -26.497, period: '2024/25' },
+        previous: { value: '-£21.41bn', raw: -21.407, period: '2023/24' },
         // Note: \u00a326.497bn - \u00a321.407bn = \u00a35.09bn (corrected from an
         // earlier \u00a35.90bn figure on the old site).
-        change: { value: '\u00a35.09bn', direction: 'down' },
+        change: { value: '-£5.09bn', direction: 'down' },
         status: 'red',
         narrative: 'The Scottish Government is running a fiscal deficit, and the deficit is worsening.',
         source: { name: 'Scottish Government \u2014 GERS 2024/25', url: 'https://www.gov.scot/publications/government-expenditure-revenue-scotland-2024-25' }
