@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>state.scot — Tracking the Performance of the Scottish State</title>
+  <meta name="description" content="An independent dashboard tracking Scottish Government performance across fiscal, NHS, education, justice, social security, housing and transport, using official data.">
+  <link rel="canonical" href="https://www.state.scot/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="state.scot — Tracking the Performance of the Scottish State">
+  <meta property="og:description" content="An independent dashboard tracking Scottish Government performance using official data — fiscal, NHS, education, justice, social security, housing and transport.">
+  <meta property="og:url" content="https://www.state.scot/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@statescot">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "state.scot",
+    "url": "https://www.state.scot/",
+    "description": "An independent dashboard tracking key performance indicators of the Scottish State, drawn from official public sources.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Martin Guy"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="wordmark">state.scot</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Overview</a>
+        <a href="fiscal.html">Fiscal</a>
+        <a href="nhs.html">NHS</a>
+        <a href="education.html">Education</a>
+        <a href="justice.html">Justice</a>
+        <a href="social-security.html">Social Security</a>
+        <a href="housing.html">Housing</a>
+        <a href="transport.html">Transport</a>
+        <a href="feedback-disclaimers.html">Feedback &amp; Disclaimers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero__eyebrow">Independent &middot; Data-led &middot; Updated regularly</p>
+        <h1 class="hero__title">Tracking the performance of <em>the Scottish State</em>.</h1>
+        <p class="hero__sub">An independent dashboard monitoring key performance indicators across Scotland&rsquo;s public finances and public services, drawn from official sources including GERS, Public Health Scotland, Police Scotland, Social Security Scotland, Transport Scotland and the Office of Rail and Road.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="scoreboard-header">
+        <h2>Sections</h2>
+        <div class="legend">
+          <span><span class="legend__dot" style="background:#A6321E"></span>Worsening</span>
+          <span><span class="legend__dot" style="background:#B8842B"></span>Mixed / unchanged</span>
+          <span><span class="legend__dot" style="background:#2F6F4F"></span>Improving</span>
+          <span><span class="legend__dot" style="background:#756F64"></span>Informational</span>
+        </div>
+      </div>
+      <div class="scoreboard" id="scoreboard"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>state.scot is an independent website and is not affiliated with, endorsed by, or operated by the Scottish Government. Figures last reviewed <span data-last-updated></span>.</p>
+      <div class="site-footer__links">
+        <a data-x-link href="https://x.com/statescot" target="_blank" rel="noopener">@statescot on X &#8599;</a>
+        <a href="feedback-disclaimers.html">Feedback &amp; Disclaimers</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="site.js"></script>
+  <script>renderHomepage();</script>
+</body>
+</html>
