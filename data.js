@@ -657,71 +657,76 @@ const SITE_DATA = {
     intro: 'Progress on major infrastructure projects, ScotRail performance and road safety in Scotland.',
     indicators: [
       {
-        // This indicator uses a different card layout (a progress bar
-        // and a milestone list) instead of the current/previous pair.
-        // See PROGRESS_TEMPLATE further down if you want to add another
-        // one like it.
-        id: 'transport-a9-dualling',
-        type: 'progress',
-        title: 'A9 Dualling Project',
-        description: 'Of the 83 miles of the A9 needing to be dualled, this many have been completed.',
-        progress: { current: 10.5, total: 83, unit: 'miles', asOf: 'June 2025' },
-        milestones: [
-          'Construction started in 2015.',
-          'The original completion date was 2025.',
-          'The current completion target is 2035.',
-          'At the current pace of construction, the project will be completed in 2092.'
-        ],
-        status: 'red',
-        source: { name: 'Transport Scotland', url: 'https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/' }
+        id: 'transport-calmac-cancelled',
+        title: 'CalMac - Cancelled Sailings',
+        description: 'Percentage of scheduled CalMac sailings which were cancelled.',
+        target: null,
+        current:  { value: '2.36%', raw: 2.36, period: 'May 2026' },
+        previous: { value: '6.13%', raw: 6.13, period: 'May 2025' },
+        change: { value: '3.77pp', direction: 'down' },
+        status: 'green',
+        narrative: 'The proportion of CalMac sailings which were cancelled has decreased.',
+        source: { name: 'CalMac', url: 'https://corporate.calmac.co.uk/en-gb/about-us/performance-reports/regional-performance/' }
+      },
+      {
+        id: 'transport-calmac-late',
+        title: 'CalMac - Late Sailings',
+        description: 'Percentage of scheduled CalMac sailings which arrived late (at least 5 minutes late arriving for short crossings under 1 hour, or at least 15 minutes late for longer crossings over 1 hour).',
+        target: null,
+        current:  { value: '4.82%', raw: 4.82, period: 'May 2026' },
+        previous: { value: '5.33%', raw: 5.33, period: 'May 2025' },
+        change: { value: '0.51pp', direction: 'down' },
+        status: 'green',
+        narrative: 'The proportion of CalMac sailings which arrived late has decreased.',
+        source: { name: 'CalMac', url: 'https://corporate.calmac.co.uk/en-gb/about-us/performance-reports/regional-performance/' }
       },
       {
         id: 'transport-scotrail-punctuality',
-        title: 'ScotRail \u2014 Punctuality',
-        description: 'Percentage of services which arrive within 5 minutes of their scheduled arrival time.',
-        target: null,
-        current:  { value: '91.7%', raw: 91.7, period: 'May\u2013Jun 2025' },
-        previous: { value: '91.4%', raw: 91.4, period: 'Apr\u2013May 2025' },
-        change: { value: '0.3pp', direction: 'up' },
-        status: 'green',
-        narrative: 'ScotRail punctuality has improved.',
+        title: 'ScotRail - Punctuality',
+        description: 'Percentage of ScotRail services which arrived within 5 minutes of their scheduled arrival time.',
+        target: '92.5%',
+        current:  { value: '91.1%', raw: 91.1, period: 'May 2026' },
+        previous: { value: '91.4%', raw: 91.4, period: 'May 2025' },
+        change: { value: '0.3pp', direction: 'down' },
+        status: 'red',
+        narrative: 'ScotRail punctuality has worsened, and the target has been missed.',
         source: { name: 'ScotRail', url: 'https://www.scotrail.co.uk/performance-and-reliability' }
       },
       {
         id: 'transport-scotrail-cancellations',
-        title: 'ScotRail \u2014 Cancellations',
-        description: 'Percentage of services which are cancelled.',
+        title: 'ScotRail - Reliability',
+        description: 'Percentage of ScotRail services which were cancelled.',
         target: null,
-        current:  { value: '2.3%', raw: 2.3, period: '2023-24' },
-        previous: { value: '2.9%', raw: 2.9, period: '2022-23' },
-        change: { value: '0.6pp', direction: 'down' },
+        current:  { value: '2.1%', raw: 2.1, period: '2024-25' },
+        previous: { value: '2.3%', raw: 2.3, period: '2023-24' },
+        change: { value: '0.2pp', direction: 'down' },
         status: 'green',
-        narrative: 'The proportion of ScotRail services cancelled has fallen.',
-        source: { name: 'Office of Rail and Road', url: 'https://dataportal.orr.gov.uk/media/ymzlhtk4/scotrail-2023-24.pdf' }
+        narrative: 'The proportion of ScotRail services which were cancelled has fallen.',
+        source: { name: 'Office of Rail and Road', url: 'https://dataportal.orr.gov.uk/media/fjdjeejh/scotrail-key-stats.pdf' }
       },
       {
         id: 'transport-road-casualties',
-        title: 'Road Safety \u2014 Casualties',
-        description: 'Number of road casualties.',
+        title: 'Road Safety - Serious Casualties',
+        description: 'Number of serious casualties on Scottish roads.',
         target: null,
-        current:  { value: '5,829', raw: 5829, period: '2023' },
-        previous: { value: '5,643', raw: 5643, period: '2022' },
-        change: { value: '186 (3%)', direction: 'up' },
-        status: 'red',
-        narrative: 'The number of road casualties has risen.',
-        source: { name: 'Transport Scotland', url: 'https://www.transport.gov.scot/news/finalised-road-casualty-statistics-for-2023/' }
+        current:  { value: '1906', raw: 1906, period: '2025' },
+        previous: { value: '1978', raw: 1978, period: '2024' },
+        change: { value: '72', direction: 'down' },
+        status: 'green',
+        narrative: 'The number of serious road casualties has decreased.',
+        source: { name: 'Transport Scotland', url: 'https://www.transport.gov.scot/news/decrease-in-number-of-people-killed-on-scotland-s-roads-2/' }
       },
       {
         id: 'transport-road-fatalities',
-        title: 'Road Safety \u2014 Fatalities',
-        description: 'Number of road fatalities.',
+        title: 'Road Safety - Fatalities',
+        description: 'Number of fatalities on Scottish roads.',
         target: null,
-        current:  { value: '155', raw: 155, period: '2023' },
-        previous: { value: '171', raw: 171, period: '2022' },
-        change: { value: '16 (9%)', direction: 'down' },
+        current:  { value: '134', raw: 134, period: '2025' },
+        previous: { value: '160', raw: 160, period: '2024' },
+        change: { value: '26', direction: 'down' },
         status: 'green',
-        narrative: 'The number of road fatalities has fallen.',
-        source: { name: 'Transport Scotland', url: 'https://www.transport.gov.scot/news/finalised-road-casualty-statistics-for-2023/' }
+        narrative: 'The number of road fatalities has decreased.',
+        source: { name: 'Transport Scotland', url: 'https://www.transport.gov.scot/news/decrease-in-number-of-people-killed-on-scotland-s-roads-2/' }
       }
     ]
   }
