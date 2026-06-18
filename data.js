@@ -582,7 +582,7 @@ const SITE_DATA = {
         change: { value: '2461', direction: 'down' },
         status: 'red',
         narrative: 'The total number of housing completions has decreased.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/quarterly-housing-statistics-march-2026/ }
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/quarterly-housing-statistics-march-2026/' }
       },
       {
         id: 'housing-completed-private',
