@@ -115,7 +115,7 @@ const SITE_DATA = {
     title: 'NHS',
     slug: 'nhs',
     tileDescription: 'Waiting times, A&E performance, treatment guarantees.',
-    intro: 'NHS Scotland waiting times for outpatient appointments, inpatient and day case treatment, and Accident & Emergency performance.',
+    intro: 'Waiting lists, Outpatient appointments, treatment and A&E.',
     indicators: [
        {
         id: 'nhs-waiting-list',
@@ -246,7 +246,7 @@ const SITE_DATA = {
     title: 'Education',
     slug: 'education',
     tileDescription: 'Attainment, school leaver destinations, teacher numbers and class sizes.',
-    intro: 'School leaver attainment and destinations, teacher numbers, pupil-teacher ratios and class sizes across Scotland.',
+    intro: 'Pupil attainment, ASN and teachers.',
     indicators: [
       {
         id: 'edu-neet',
@@ -366,7 +366,7 @@ const SITE_DATA = {
     title: 'Justice',
     slug: 'justice',
     tileDescription: 'Police numbers, recorded crime, court outcomes and prison population.',
-    intro: 'Police officer numbers, recorded crime levels, court journey times and the prison population in Scotland.',
+    intro: 'Policing, crime, courts, prison and reoffending.',
     indicators: [
       {
         id: 'justice-police-officers',
@@ -462,7 +462,7 @@ const SITE_DATA = {
     title: 'Social Security',
     slug: 'social-security',
     tileDescription: 'Recipient numbers and processing times for devolved benefits.',
-    intro: 'Recipient numbers and application processing times for Adult Disability Payment (ADP) and Child Disability Payment (CDP).',
+    intro: 'Adult Disability Payment (ADP), Scottish Child Payment and Child Disability Payment (CDP).',
     indicators: [
       {
         id: 'ss-adp-recipients',
@@ -546,7 +546,7 @@ const SITE_DATA = {
     title: 'Housing',
     slug: 'housing',
     tileDescription: 'Housebuilding completions and starts, by sector.',
-    intro: 'Housebuilding completions and new starts in Scotland, broken down by private and social sector.',
+    intro: 'House prices, temporary accommodation and housebuilding.',
     indicators: [
       {
         id: 'housing-avg-prices',
@@ -654,7 +654,7 @@ const SITE_DATA = {
     title: 'Transport',
     slug: 'transport',
     tileDescription: 'Major infrastructure projects, rail performance and road safety.',
-    intro: 'Progress on major infrastructure projects, ScotRail performance and road safety in Scotland.',
+    intro: 'CalMac, ScotRail and road safety.',
     indicators: [
       {
         id: 'transport-calmac-cancelled',
