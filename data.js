@@ -385,24 +385,24 @@ const SITE_DATA = {
         title: 'Number of Recorded Crimes',
         description: 'Crimes are the more serious criminal acts, such as murder, assault, rape and fraud.',
         target: null,
-        current:  { value: '299,111', raw: 299111, period: '2024/25' },
-        previous: { value: '299,780', raw: 299780, period: '2023/24' },
-        change: { value: '669', direction: 'down' },
-        status: 'green',
-        narrative: 'The number of recorded crimes has decreased.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2024-25/pages/key-points/' }
+        current:  { value: '315,357', raw: 315357, period: '2025/26' },
+        previous: { value: '299,111', raw: 299111, period: '2024/25' },
+        change: { value: '16,246', direction: 'up' },
+        status: 'red',
+        narrative: 'The number of recorded crimes has increased.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2025-26/' }
       },
       {
         id: 'justice-recorded-offences',
         title: 'Number of Recorded Offences',
         description: 'Offences are the less serious criminal acts, such as speeding, littering, anti-social behaviour and traffic violations.',
         target: null,
-        current:  { value: '175,979', raw: 175979, period: '2024/25' },
-        previous: { value: '174,073', raw: 174073, period: '2023/24' },
-        change: { value: '1906', direction: 'up' },
+        current:  { value: '192,276', raw: 192276, period: '2025/26' },
+        previous: { value: '175,979', raw: 175979, period: '2024/25' },
+        change: { value: '16,297', direction: 'up' },
         status: 'red',
         narrative: 'The number of recorded offences has increased.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2024-25/pages/key-points/' }
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/recorded-crime-scotland-2025-26/' }
       },
       {
         id: 'justice-verdicts-1yr',
