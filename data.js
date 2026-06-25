@@ -75,7 +75,7 @@ const SITE_META = {
   tagline: 'Tracking the performance of the Scottish State',
   description: 'An independent dashboard monitoring key performance indicators across Scotland\u2019s public finances and public services, drawn from official sources.',
   // Update this whenever you do a data pass — shown in the footer.
-  lastUpdated: '15 June 2026',
+  lastUpdated: '25 June 2026',
   social: { x: 'https://x.com/statescot' },
   feedbackEmail: 'state.scot@outlook.com'
 };
