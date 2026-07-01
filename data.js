@@ -75,7 +75,7 @@ const SITE_META = {
   tagline: 'Tracking the performance of the Scottish State',
   description: 'An independent dashboard monitoring key performance indicators across Scotland\u2019s public finances and public services, drawn from official sources.',
   // Update this whenever you do a data pass — shown in the footer.
-  lastUpdated: '25 June 2026',
+  lastUpdated: '01 July 2026',
   social: { x: 'https://x.com/statescot' },
   feedbackEmail: 'state.scot@outlook.com'
 };
@@ -121,84 +121,84 @@ const SITE_DATA = {
         id: 'nhs-waiting-list',
         title: 'NHS Scotland Waiting Lists',
         description: 'Number of patients on at least one outpatient, inpatient or day case waiting list.',
-        current:  { value: '572,206', raw: 572206, period: 'April 2026' },
-        previous: { value: '571,054', raw: 571054, period: 'March 2026' },
-        change: { value: '1152', direction: 'up' },
+        current:  { value: '579,814', raw: 579814, period: 'May 2026' },
+        previous: { value: '572,206', raw: 572206, period: 'April 2026' },
+        change: { value: '7608', direction: 'up' },
         status: 'red',
         narrative: 'The number of patients on a waiting list has increased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-outpatient-standard',
         title: 'Outpatient Appointments Received Within 12 weeks',
         description: 'Under the Outpatient National Standard, 95% of new outpatients should receive an appointment within 12 weeks.',
         target: '95% of new outpatients seen within 12 weeks.',
-        current:  { value: '65.5%', raw: 65.5, period: 'April 2026' },
-        previous: { value: '59.2%', raw: 59.2, period: 'March 2026' },
-        change: { value: '6.3pp', direction: 'up' },
-        status: 'amber',
-        narrative: 'The target has been missed, but more patients are receiving outpatient appointments within 12 weeks.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        current:  { value: '63.5%', raw: 63.5, period: 'May 2026' },
+        previous: { value: '65.5%', raw: 65.5, period: 'April 2026' },
+        change: { value: '2.0pp', direction: 'down' },
+        status: 'red',
+        narrative: 'The target has been missed, and fewer patients are receiving outpatient appointments within 12 weeks.',
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-outpatient-over-1yr',
         title: 'Outpatient Appointments - waiting over one year',
         description: 'Number of patients waiting over 52 weeks for an outpatient appointment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '14,986', raw: 14986, period: 'April 2026' },
-        previous: { value: '16,090', raw: 16090, period: 'March 2026' },
-        change: { value: '1104', direction: 'down' },
+        current:  { value: '14,571', raw: 14571, period: 'May 2026' },
+        previous: { value: '15,155', raw: 15155, period: 'April 2026' },
+        change: { value: '584', direction: 'down' },
         status: 'amber',
         narrative: 'The target has been missed, but the number of patients waiting over 52 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-outpatient-over-2yr',
         title: 'Outpatient Appointments - waiting over two years',
         description: 'Number of patients waiting over 104 weeks for an outpatient appointment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '1144', raw: 1144, period: 'April 2026' },
-        previous: { value: '1166', raw: 1166, period: 'March 2026' },
-        change: { value: '22', direction: 'down' },
+        current:  { value: '1073', raw: 1073, period: 'May 2026' },
+        previous: { value: '1152', raw: 1152, period: 'April 2026' },
+        change: { value: '79', direction: 'down' },
         status: 'amber',
         narrative: 'The target has been missed, but the number of patients waiting over 104 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-ttg',
         title: 'Treatments Completed within 12 weeks',
         description: 'Under the Treatment Time Guarantee, following the decision to treat, all eligible patients should wait no longer than 12 weeks for treatment.',
         target: '100% of patients treated within 12 weeks.',
-        current:  { value: '57.0%', raw: 57.0, period: 'April 2026' },
-        previous: { value: '53.9%', raw: 53.9, period: 'March 2026' },
-        change: { value: '3.1pp', direction: 'up' },
-        status: 'amber',
-        narrative: 'The target has been missed, but more patients are being treated within 12 weeks.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        current:  { value: '56.0%', raw: 56.0, period: 'May 2026' },
+        previous: { value: '56.8%', raw: 56.8, period: 'April 2026' },
+        change: { value: '0.8pp', direction: 'down' },
+        status: 'red',
+        narrative: 'The target has been missed, and fewer patients are being treated within 12 weeks.',
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-treatment-over-1yr',
         title: 'Treatment - patients waiting over one year',
         description: 'Number of patients waiting over 52 weeks for treatment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '17,293', raw: 17293, period: 'April 2026' },
-        previous: { value: '17,882', raw: 17882, period: 'March 2026' },
-        change: { value: '589', direction: 'down' },
-        status: 'amber',
-        narrative: 'The target has been missed, but the number of patients waiting over 52 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        current:  { value: '17,267', raw: 17267, period: 'May 2026' },
+        previous: { value: '17,212', raw: 17212, period: 'April 2026' },
+        change: { value: '55', direction: 'up' },
+        status: 'red',
+        narrative: 'The target has been missed, and the number of patients waiting over 52 weeks has increased.',
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-treatment-over-2yr',
         title: 'Treatment - patients waiting over two years',
         description: 'Number of patients waiting over 104 weeks for treatment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '2289', raw: 2289, period: 'April 2026' },
-        previous: { value: '2500', raw: 2500, period: 'March 2026' },
-        change: { value: '211', direction: 'down' },
+        current:  { value: '2268', raw: 2268, period: 'May 2026' },
+        previous: { value: '2292', raw: 2292, period: 'April 2026' },
+        change: { value: '24', direction: 'down' },
         status: 'amber',
         narrative: 'The target has been missed, but the number of patients waiting over 104 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-26-may-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
       },
       {
         id: 'nhs-ae-4hr',
