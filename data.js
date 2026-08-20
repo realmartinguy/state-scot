@@ -656,6 +656,18 @@ const SITE_DATA = {
     intro: 'CalMac, ScotRail and road safety.',
     indicators: [
       {
+        id: 'transport-calmac-sailings',
+        title: 'CalMac - Total Number of Sailings',
+        description: 'The total number of scheduled CalMac sailings in the month.',
+        target: null,
+        current:  { value: '17,224', raw: 17224, period: 'July 2026' },
+        previous: { value: '17,190', raw: 17190, period: 'July 2025' },
+        change: { value: '34', direction: 'up' },
+        status: 'green',
+        narrative: 'The number of CalMac sailings has increased.',
+        source: { name: 'CalMac', url: 'https://corporate.calmac.co.uk/en-gb/about-us/performance-reports/regional-performance/' }
+      },
+      {
         id: 'transport-calmac-cancelled',
         title: 'CalMac - Cancelled Sailings',
         description: 'Percentage of scheduled CalMac sailings which were cancelled.',
