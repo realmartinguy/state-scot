@@ -75,7 +75,7 @@ const SITE_META = {
   tagline: 'Tracking the performance of the Scottish State',
   description: 'An independent dashboard monitoring key performance indicators across Scotland\u2019s public finances and public services, drawn from official sources.',
   // Update this whenever you do a data pass — shown in the footer.
-  lastUpdated: '01 July 2026',
+  lastUpdated: '20 August 2026',
   social: { x: 'https://x.com/statescot' },
   feedbackEmail: 'state.scot@outlook.com'
 };
@@ -96,14 +96,14 @@ const SITE_DATA = {
         title: 'Net Fiscal Balance',
         description: 'Net Fiscal Balance = Public Sector Revenue - Public Sector Expenditure.',
         target: null,
-        current:  { value: '-£26.50bn', raw: -26.497, period: '2024/25' },
-        previous: { value: '-£21.41bn', raw: -21.407, period: '2023/24' },
+        current:  { value: '-£25.30bn', raw: -25.3, period: '2025/26' },
+        previous: { value: '-£26.50bn', raw: -26.497, period: '2024/25' },
         // Note: \u00a326.497bn - \u00a321.407bn = \u00a35.09bn (corrected from an
         // earlier \u00a35.90bn figure on the old site).
-        change: { value: '-£5.09bn', direction: 'down' },
-        status: 'red',
-        narrative: 'The Scottish Government is running a fiscal deficit, and the deficit is worsening.',
-        source: { name: 'Scottish Government \u2014 GERS 2024/25', url: 'https://www.gov.scot/publications/government-expenditure-revenue-scotland-2024-25' }
+        change: { value: '£1.2bn', direction: 'up' },
+        status: 'amber',
+        narrative: 'The Scottish Government is running a fiscal deficit, but the deficit is improving.',
+        source: { name: 'Scottish Government \u2014 GERS 2025/26', url: 'https://www.gov.scot/publications/government-expenditure-revenue-scotland-2025-26' }
       }
     ]
   },
@@ -121,93 +121,93 @@ const SITE_DATA = {
         id: 'nhs-waiting-list',
         title: 'NHS Scotland Waiting Lists',
         description: 'Number of patients on at least one outpatient, inpatient or day case waiting list.',
-        current:  { value: '579,814', raw: 579814, period: 'May 2026' },
-        previous: { value: '572,206', raw: 572206, period: 'April 2026' },
-        change: { value: '7608', direction: 'up' },
+        current:  { value: '580,545', raw: 580545, period: 'June 2026' },
+        previous: { value: '579,814', raw: 579814, period: 'May 2026' },
+        change: { value: '731', direction: 'up' },
         status: 'red',
         narrative: 'The number of patients on a waiting list has increased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-outpatient-standard',
         title: 'Outpatient Appointments Received Within 12 weeks',
         description: 'Under the Outpatient National Standard, 95% of new outpatients should receive an appointment within 12 weeks.',
         target: '95% of new outpatients seen within 12 weeks.',
-        current:  { value: '63.5%', raw: 63.5, period: 'May 2026' },
-        previous: { value: '65.5%', raw: 65.5, period: 'April 2026' },
-        change: { value: '2.0pp', direction: 'down' },
-        status: 'red',
-        narrative: 'The target has been missed, and fewer patients are receiving outpatient appointments within 12 weeks.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        current:  { value: '63.6%', raw: 63.6, period: 'June 2026' },
+        previous: { value: '63.5%', raw: 63.5, period: 'May 2026' },
+        change: { value: '0.1pp', direction: 'up' },
+        status: 'amber',
+        narrative: 'The target has been missed, but more patients are receiving outpatient appointments within 12 weeks.',
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-outpatient-over-1yr',
         title: 'Outpatient Appointments - waiting over one year',
         description: 'Number of patients waiting over 52 weeks for an outpatient appointment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '14,571', raw: 14571, period: 'May 2026' },
-        previous: { value: '15,155', raw: 15155, period: 'April 2026' },
-        change: { value: '584', direction: 'down' },
+        current:  { value: '14,238', raw: 14238, period: 'June 2026' },
+        previous: { value: '14,571', raw: 14571, period: 'May 2026' },
+        change: { value: '333', direction: 'down' },
         status: 'amber',
         narrative: 'The target has been missed, but the number of patients waiting over 52 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-outpatient-over-2yr',
         title: 'Outpatient Appointments - waiting over two years',
         description: 'Number of patients waiting over 104 weeks for an outpatient appointment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '1073', raw: 1073, period: 'May 2026' },
-        previous: { value: '1152', raw: 1152, period: 'April 2026' },
-        change: { value: '79', direction: 'down' },
+        current:  { value: '1,058', raw: 1058, period: 'June 2026' },
+        previous: { value: '1,073', raw: 1073, period: 'May 2026' },
+        change: { value: '15', direction: 'down' },
         status: 'amber',
         narrative: 'The target has been missed, but the number of patients waiting over 104 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-ttg',
         title: 'Treatments Completed within 12 weeks',
         description: 'Under the Treatment Time Guarantee, following the decision to treat, all eligible patients should wait no longer than 12 weeks for treatment.',
         target: '100% of patients treated within 12 weeks.',
-        current:  { value: '56.0%', raw: 56.0, period: 'May 2026' },
-        previous: { value: '56.8%', raw: 56.8, period: 'April 2026' },
-        change: { value: '0.8pp', direction: 'down' },
-        status: 'red',
-        narrative: 'The target has been missed, and fewer patients are being treated within 12 weeks.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        current:  { value: '56.3%', raw: 56.3, period: 'June 2026' },
+        previous: { value: '56.0%', raw: 56.0, period: 'May 2026' },
+        change: { value: '0.3pp', direction: 'up' },
+        status: 'amber',
+        narrative: 'The target has been missed, but more patients are being treated within 12 weeks.',
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-treatment-over-1yr',
         title: 'Treatment - patients waiting over one year',
         description: 'Number of patients waiting over 52 weeks for treatment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '17,267', raw: 17267, period: 'May 2026' },
-        previous: { value: '17,212', raw: 17212, period: 'April 2026' },
-        change: { value: '55', direction: 'up' },
-        status: 'red',
-        narrative: 'The target has been missed, and the number of patients waiting over 52 weeks has increased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        current:  { value: '17,097', raw: 17097, period: 'June 2026' },
+        previous: { value: '17,267', raw: 17267, period: 'May 2026' },
+        change: { value: '170', direction: 'down' },
+        status: 'amber',
+        narrative: 'The target has been missed, but the number of patients waiting over 52 weeks has decreased.',
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-treatment-over-2yr',
         title: 'Treatment - patients waiting over two years',
         description: 'Number of patients waiting over 104 weeks for treatment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '2268', raw: 2268, period: 'May 2026' },
-        previous: { value: '2292', raw: 2292, period: 'April 2026' },
-        change: { value: '24', direction: 'down' },
+        current:  { value: '2,181', raw: 2181, period: 'June 2026' },
+        previous: { value: '2,268', raw: 2268, period: 'May 2026' },
+        change: { value: '87', direction: 'down' },
         status: 'amber',
         narrative: 'The target has been missed, but the number of patients waiting over 104 weeks has decreased.',
-        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-30-june-2026/' }
+        source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/stage-of-treatment-waiting-times-new-outpatients-inpatients-and-day-cases-28-july-2026/' }
       },
       {
         id: 'nhs-ae-4hr',
         title: 'A&E patients seen within 4 hours',
         description: 'Under the A&E Access Standard, 95% of A&E attendances should be seen and result in a subsequent admission, transfer or discharge within 4 hours.',
         target: '95%.',
-        current:  { value: '68.0%', raw: 68.0, period: 'April 2026' },
-        previous: { value: '67.5%', raw: 67.5, period: 'March 2026' },
-        change: { value: '0.5pp', direction: 'up' },
+        current:  { value: '67.9%', raw: 67.9, period: 'June 2026' },
+        previous: { value: '67.6%', raw: 67.6, period: 'May 2026' },
+        change: { value: '0.3pp', direction: 'up' },
         status: 'amber',
         narrative: 'The target has been missed, but more A&E patients are being seen within 4 hours.',
         source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/main-points/all-ae-sites/' }
@@ -215,11 +215,10 @@ const SITE_DATA = {
       {
         id: 'nhs-ae-8hr',
         title: 'A&E attendances over 8 hours',
-        description: 'Number of patients spending over 8 hours in A&E.',
-        target: null,
-        current:  { value: '15,389', raw: 15389, period: 'April 2026' },
-        previous: { value: '17,543', raw: 17543, period: 'March 2026' },
-        change: { value: '2154', direction: 'down' },
+         target: null,
+        current:  { value: '15,974', raw: 15974, period: 'June 2026' },
+        previous: { value: '16,779', raw: 16779, period: 'May 2026' },
+        change: { value: '805', direction: 'down' },
         status: 'green',
         narrative: 'The number of patients spending over 8 hours in A&E has fallen.',
         source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/main-points/all-ae-sites/' }
@@ -229,9 +228,9 @@ const SITE_DATA = {
         title: 'A&E attendances over 12 hours',
         description: 'Number of patients spending over 12 hours in A&E.',
         target: null,
-        current:  { value: '6394', raw: 6394, period: 'April 2026' },
-        previous: { value: '7745', raw: 7745, period: 'March 2026' },
-        change: { value: '1351', direction: 'down' },
+        current:  { value: '6,292', raw: 6292, period: 'June 2026' },
+        previous: { value: '7,133', raw: 7133, period: 'May 2026' },
+        change: { value: '841', direction: 'down' },
         status: 'green',
         narrative: 'The number of patients spending over 12 hours in A&E has fallen.',
         source: { name: 'Public Health Scotland', url: 'https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/main-points/all-ae-sites/' }
@@ -290,7 +289,7 @@ const SITE_DATA = {
         description: 'Number of secondary school teachers.',
         target: null,
         current:  { value: '25,067', raw: 25067, period: '2025' },
-        previous: { value: '24988', raw: 24988, period: '2024' },
+        previous: { value: '24,988', raw: 24988, period: '2024' },
         change: { value: '79', direction: 'up' },
         status: 'green',
         narrative: 'The number of secondary school teachers has risen.',
@@ -301,8 +300,8 @@ const SITE_DATA = {
         title: 'Number of Teachers - Special',
         description: 'Number of special school teachers.',
         target: null,
-        current:  { value: '2195', raw: 2195, period: '2025' },
-        previous: { value: '2138', raw: 2138, period: '2024' },
+        current:  { value: '2,195', raw: 2195, period: '2025' },
+        previous: { value: '2,138', raw: 2138, period: '2024' },
         change: { value: '57', direction: 'up' },
         status: 'green',
         narrative: 'The number of special school teachers has risen.',
@@ -373,11 +372,11 @@ const SITE_DATA = {
         title: 'Number of Police Officers',
         description: 'Full-time equivalent (FTE) Number of Police Scotland officers.',
         target: null,
-        current:  { value: '16,430', raw: 16430, period: 'Q1 2026' },
-        previous: { value: '16,416', raw: 16416, period: 'Q4 2025' },
-        change: { value: '14', direction: 'up' },
-        status: 'green',
-        narrative: 'The number of police officers has risen.',
+        current:  { value: '16,402', raw: 16402, period: 'Q2 2026' },
+        previous: { value: '16,430', raw: 16430, period: 'Q1 2026' },
+        change: { value: '28', direction: 'down' },
+        status: 'red',
+        narrative: 'The number of police officers has fallen.',
         source: { name: 'Police Scotland', url: 'https://www.scotland.police.uk/about-us/how-we-do-it/police-scotland-officer-numbers/' }
       },
       {
@@ -421,8 +420,8 @@ const SITE_DATA = {
         title: 'Prison Population',
         description: 'Average daily prison population.',
         target: null,
-        current:  { value: '8216', raw: 8216, period: '2024/25' },
-        previous: { value: '7860', raw: 7860, period: '2023/24' },
+        current:  { value: '8,216', raw: 8216, period: '2024/25' },
+        previous: { value: '7,860', raw: 7860, period: '2023/24' },
         change: { value: '356', direction: 'up' },
         status: 'neutral',
         narrative: 'The prison population has risen.',
@@ -445,12 +444,12 @@ const SITE_DATA = {
         title: 'Reoffending Within 1 Year',
         description: 'Proportion of individuals who left custody or had a community sentence who were reconvicted within 1 year.',
         target: null,
-        current:  { value: '27.1%', raw: 27.1, period: '2021/22' },
-        previous: { value: '26.9%', raw: 26.9, period: '2020/21' },
+        current:  { value: '26.1%', raw: 26.1, period: '2022/23' },
+        previous: { value: '27.1%', raw: 27.1, period: '2021/22' },
         change: { value: '0.2pp', direction: 'up' },
-        status: 'red',
-        narrative: 'The proportion of those leaving the criminal justice system who reoffend has increased. Note, the delay in reporting is so accurate data can be gathered on convictions and verdicts.',
-        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/reconviction-rates-in-scotland-2021-22-offender-cohort/' }
+        status: 'green',
+        narrative: 'The proportion of those leaving the criminal justice system who reoffend has decreased. Note, the delay in reporting is so accurate data can be gathered on convictions and verdicts.',
+        source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/reconviction-rates-in-scotland-2022-23-offender-cohort/' }
       }
     ]
   },
@@ -471,7 +470,7 @@ const SITE_DATA = {
         target: null,
         current:  { value: '504,710', raw: 504710, period: 'Q1 2026' },
         previous: { value: '498,090', raw: 498090, period: 'Q4 2025' },
-        change: { value: '6620', direction: 'up' },
+        change: { value: '6,620', direction: 'up' },
         status: 'red',
         narrative: 'The number of people receiving ADP has increased.',
         source: { name: 'Social Security Scotland', url: 'https://www.socialsecurity.gov.scot/publications/2026/06/adult-disability-payment-statistics-to-30-april-2026' }
@@ -517,24 +516,24 @@ const SITE_DATA = {
         title: 'CDP - Recipient Numbers',
         description: 'Number of recipients of the Child Disability Payment (CDP).',
         target: null,
-        current:  { value: '101,990', raw: 101990, period: 'Q1 2026' },
-        previous: { value: '98,950', raw: 98950, period: 'Q4 2026' },
-        change: { value: '3040', direction: 'up' },
+        current:  { value: '104,185', raw: 104185, period: 'Q2 2026' },
+        previous: { value: '101,990', raw: 101990, period: 'Q1 2026' },
+        change: { value: '2,195', direction: 'up' },
         status: 'red',
         narrative: 'The number of recipients of the CDP has increased.',
-        source: { name: 'Social Security Scotland', url: 'https://www.socialsecurity.gov.scot/publications/2026/05/child-disability-payment-statistics-to-31-march-2026' }
+        source: { name: 'Social Security Scotland', url: 'https://www.socialsecurity.gov.scot/publications/2026/05/child-disability-payment-statistics-to-30-june-2026' }
       },
       {
         id: 'ss-cdp-processing',
         title: 'CDP - Application Processing Time',
         description: 'Average processing time for Child Disability Payment (CDP) applications.',
         target: null,
-        current:  { value: '40 days', raw: 40, period: 'Q1 2026' },
-        previous: { value: '72 days', raw: 72, period: 'Q4 2025' },
-        change: { value: '32 days', direction: 'down' },
-        status: 'green',
-        narrative: 'The processing time for CDP applications has decreased.',
-        source: { name: 'Social Security Scotland', url: 'https://www.socialsecurity.gov.scot/publications/2026/05/child-disability-payment-statistics-to-31-march-2026' }
+        current:  { value: '43 days', raw: 43, period: 'Q2 2026' },
+        previous: { value: '39 days', raw: 39, period: 'Q1 2026' },
+        change: { value: '4 days', direction: 'up' },
+        status: 'red',
+        narrative: 'The processing time for CDP applications has increased.',
+        source: { name: 'Social Security Scotland', url: 'https://www.socialsecurity.gov.scot/publications/2026/05/child-disability-payment-statistics-to-30-june-2026' }
       }
     ]
   },
@@ -553,12 +552,12 @@ const SITE_DATA = {
         title: 'Average House Price',
         description: 'Average house price in Scotland.',
         target: null,
-        current:  { value: '£192,000', raw: 192000, period: 'April 2026' },
-        previous: { value: '£191,000', raw: 191000, period: 'April 2025' },
-        change: { value: '£1000', direction: 'up' },
+        current:  { value: '£195,000', raw: 195000, period: 'June 2026' },
+        previous: { value: '£192,000', raw: 192000, period: 'June 2025' },
+        change: { value: '£3,000', direction: 'up' },
         status: 'neutral',
-        narrative: 'The average house price in Scotland has slightly risen.',
-        source: { name: 'HM Land Registry, UK Government', url: 'https://www.gov.uk/government/statistics/uk-house-price-index-for-april-2026/uk-house-price-index-scotland-april-2026?utm_medium=RoS&utm_source=news_page&utm_campaign=UKHPI_Scotland&utm_term=9.30_17_06_26&utm_content=UKHPI_Scotland' }
+        narrative: 'The average house price in Scotland has risen.',
+        source: { name: 'HM Land Registry', url: 'https://www.gov.uk/government/statistics/uk-house-price-index-for-june-2026/uk-house-price-index-scotland-june-2026' }
       },
       {
         id: 'housing-temp-accommodation',
@@ -567,7 +566,7 @@ const SITE_DATA = {
         target: null,
         current:  { value: '18,092', raw: 18092, period: 'September 2025' },
         previous: { value: '16,634', raw: 16634, period: 'September 2024' },
-        change: { value: '1458', direction: 'up' },
+        change: { value: '1,458', direction: 'up' },
         status: 'red',
         narrative: 'The number of households living in temporary accommodation has increased.',
         source: { name: 'Scottish Government', url: 'https://www.gov.scot/news/homelessness-statistics-april-to-september-2025/' }
@@ -579,7 +578,7 @@ const SITE_DATA = {
         target: null,
         current:  { value: '17,336', raw: 17336, period: 'Year to December 2025' },
         previous: { value: '19,797', raw: 19797, period: 'Year to December 2024' },
-        change: { value: '2461', direction: 'down' },
+        change: { value: '2,461', direction: 'down' },
         status: 'red',
         narrative: 'The total number of housing completions has decreased.',
         source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/quarterly-housing-statistics-march-2026/' }
@@ -591,7 +590,7 @@ const SITE_DATA = {
         target: null,
         current:  { value: '13,725', raw: 13725, period: 'Year to December 2025' },
         previous: { value: '15,066', raw: 15066, period: 'Year to December 2024' },
-        change: { value: '1341', direction: 'down' },
+        change: { value: '1,341', direction: 'down' },
         status: 'red',
         narrative: 'The number of housing completions by the private sector has decreased.',
         source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/quarterly-housing-statistics-march-2026/' }
@@ -601,9 +600,9 @@ const SITE_DATA = {
         title: 'Houses Built (Completed) - Social Sector',
         description: 'Number of houses built (completed) by the social sector in the previous 12 months.',
         target: null,
-        current:  { value: '3611', raw: 3611, period: 'Year to December 2025' },
-        previous: { value: '4731', raw: 4731, period: 'Year to December 2024' },
-        change: { value: '1120', direction: 'down' },
+        current:  { value: '3,611', raw: 3611, period: 'Year to December 2025' },
+        previous: { value: '4,731', raw: 4731, period: 'Year to December 2024' },
+        change: { value: '1,120', direction: 'down' },
         status: 'red',
         narrative: 'The number of housing completions by the social sector has decreased.',
         source: { name: 'Scottish Government', url: 'https://www.gov.scot/publications/quarterly-housing-statistics-march-2026/' }
