@@ -157,7 +157,7 @@ const SITE_DATA = {
         title: 'Outpatient Appointments - waiting over two years',
         description: 'Number of patients waiting over 104 weeks for an outpatient appointment.',
         target: 'Zero waits over 52 weeks by March 2026',
-        current:  { value: '1,057', raw: 1058, period: 'June 2026' },
+        current:  { value: '1,058', raw: 1058, period: 'June 2026' },
         previous: { value: '1,073', raw: 1073, period: 'May 2026' },
         change: { value: '15', direction: 'down' },
         status: 'amber',
